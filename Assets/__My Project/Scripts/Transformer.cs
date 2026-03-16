@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Transformer : MonoBehaviour
@@ -28,6 +29,11 @@ public class Transformer : MonoBehaviour
 
     public void MoveLeft(float distance)
     {
+        StartCoroutine(StrikeDelay(distance));
+    }
+    IEnumerator StrikeDelay(float distance)
+    {
+        yield return new WaitForSeconds(0.3f);
         targetTransform.position += Vector3.left * distance;
     }
     public void MoveTo(Transform position)
