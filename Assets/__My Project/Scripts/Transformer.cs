@@ -43,6 +43,5 @@ public class Transformer : MonoBehaviour
     public void RotateTo(Transform rotation)
     {
         targetTransform.rotation = rotation.rotation;
-        Debug.Log(rotation);
     }
 }
