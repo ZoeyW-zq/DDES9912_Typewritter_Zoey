@@ -315,7 +315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -348,7 +348,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 2055980453}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -375,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -399,7 +399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -695,18 +695,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: onTriggerStay.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: onTriggerStay.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: onTriggerStay.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1660526431}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1660526431}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 184199966}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: onTriggerStay.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
@@ -714,16 +742,52 @@ PrefabInstance:
       value: RotateTo
       objectReference: {fileID: 0}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RotateTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: onTriggerStay.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Transformer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Transformer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: InteractableTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: onTriggerStay.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 662255696}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 662255696}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: onTriggerStay.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Transform, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Transform, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1076,7 +1140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -1109,7 +1173,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 573731560}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -1136,7 +1200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1160,7 +1224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -1468,171 +1532,6 @@ Transform:
   - {fileID: 2031804857}
   m_Father: {fileID: 757317008}
   m_LocalEulerAnglesHint: {x: 0, y: 9, z: 0}
---- !u!1001 &113846850
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2070142728}
-    m_Modifications:
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_text
-      value: 'BACK
-
-        SPACE'
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_fontSize
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_lineSpacing
-      value: -35
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_wordSpacing
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_overflowMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_uvLineOffset
-      value: 103.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_verticalMapping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_TextWrappingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_characterSpacing
-      value: -14
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_TextStyleHashCode
-      value: -1183493901
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_horizontalMapping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150387816232, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150387816232, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.945
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.125
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.189
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 397672150562313435, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_Name
-      value: Keyboard Button_Backspace
-      objectReference: {fileID: 0}
-    - target: {fileID: 952681587886896919, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 952681587886896919, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0475
-      objectReference: {fileID: 0}
-    - target: {fileID: 952681587886896919, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 952681587886896919, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1857501234}
-    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MoveLeft
-      objectReference: {fileID: 0}
-    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Transformer, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
-      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: -0.05
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 328ca167c3055284f922434095049579, type: 3}
---- !u!4 &113846851 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
-  m_PrefabInstance: {fileID: 113846850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &121691360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,7 +1715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -1849,7 +1748,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1419097232}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -1876,7 +1775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1900,7 +1799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -2395,6 +2294,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &184199966 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+  m_PrefabInstance: {fileID: 1909509708}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184199955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4bcbc1ac451be4fa078b560e85f31f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &189393955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2527,7 +2437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -2560,7 +2470,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1318285077}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -2587,7 +2497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2611,7 +2521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -3202,7 +3112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -3231,7 +3141,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 628372780}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -3258,7 +3168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3282,7 +3192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -3526,7 +3436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -3559,7 +3469,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 2108462162}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -3586,7 +3496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3610,7 +3520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -3861,7 +3771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -3894,7 +3804,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 2042834458}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -3921,7 +3831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3945,7 +3855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -4348,7 +4258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -4381,7 +4291,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1561531229}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -4408,7 +4318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4432,7 +4342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -4880,7 +4790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -4909,7 +4819,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 1857501234}
+      objectReference: {fileID: 1080496347}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -4936,7 +4846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: MoveLeft
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4960,7 +4870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: KeyPress, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
@@ -5585,7 +5495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -5618,7 +5528,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1988356389}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -5645,7 +5555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5669,7 +5579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -5843,7 +5753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -5876,7 +5786,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1871194958}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -5903,7 +5813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5927,7 +5837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -6591,6 +6501,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478994022}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &490493056 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 584889666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &492070308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6997,6 +6912,242 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &573731560 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 96321085}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
+--- !u!1001 &584889666
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2070142728}
+    m_Modifications:
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_text
+      value: 'margin
+
+        release'
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_fontSize
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_lineSpacing
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.573
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.723
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8480481
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.52991927
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -116
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313435, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_Name
+      value: Keyboard Button_Margin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 184199966}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1857501234}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 184199966}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 782953024}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: enableMoveLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: Strike
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1857501234}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InteractableTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Transformer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: InteractableTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: RotateAndBack, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_FloatArgument
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Transformer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: /
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: '%'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 39171098744318625, guid: 328ca167c3055284f922434095049579, type: 3}
+    - {fileID: 2111447883587375426, guid: 328ca167c3055284f922434095049579, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 328ca167c3055284f922434095049579, type: 3}
 --- !u!1 &587551059
 GameObject:
   m_ObjectHideFlags: 0
@@ -7091,6 +7242,174 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8463966553367298693, guid: 5ba834d701f5f5447bed78e03e041e6c, type: 3}
   m_PrefabInstance: {fileID: 593070512}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &599357818
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2070142728}
+    m_Modifications:
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_text
+      value: 'SHIFT
+
+        KEY'
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_fontSize
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_lineSpacing
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_characterSpacing
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150387816232, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150387816232, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.948
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.189
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313435, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_Name
+      value: Keyboard Button_Shiftkey (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952681587886896919, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 952681587886896919, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0475
+      objectReference: {fileID: 0}
+    - target: {fileID: 952681587886896919, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 952681587886896919, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 599357820}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PressKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PressShift
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: KeyPress, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: KeyboardState, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 328ca167c3055284f922434095049579, type: 3}
+--- !u!4 &599357819 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 599357818}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &599357820 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7001195054996475358, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 599357818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPress
 --- !u!1 &605570959
 GameObject:
   m_ObjectHideFlags: 0
@@ -7543,6 +7862,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &628372780 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 225508752}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &643006185
 GameObject:
   m_ObjectHideFlags: 0
@@ -8147,7 +8477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -8180,7 +8510,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 683586864}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -8207,7 +8537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -8231,7 +8561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -8342,6 +8672,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &683586864 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 683586859}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &697975615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8536,7 +8877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -8569,7 +8910,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1672894631}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -8596,7 +8937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -8620,7 +8961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -8896,6 +9237,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1857501234}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MoveLeft
       objectReference: {fileID: 0}
@@ -9056,7 +9405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -9089,7 +9438,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1314388896}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -9116,7 +9465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -9140,7 +9489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -9316,6 +9665,248 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8463966553367298693, guid: 5ba834d701f5f5447bed78e03e041e6c, type: 3}
   m_PrefabInstance: {fileID: 737088265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &743848083
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2070142728}
+    m_Modifications:
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_text
+      value: 'margin
+
+        release'
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_fontSize
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_lineSpacing
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.674
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.573
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.723
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8480481
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.52991927
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -116
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 397672150562313435, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: m_Name
+      value: Keyboard Button_Backspace
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1857501234}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 184199966}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 184199966}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 782953024}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: Strike
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1857501234}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Transformer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: InteractableTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: InteractableTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: RotateAndBack, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_FloatArgument
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Transformer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: /
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: '%'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 39171098744318625, guid: 328ca167c3055284f922434095049579, type: 3}
+    - {fileID: 2111447883587375426, guid: 328ca167c3055284f922434095049579, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 328ca167c3055284f922434095049579, type: 3}
+--- !u!4 &743848084 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 743848083}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &745217996
 GameObject:
@@ -10865,7 +11456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -10898,7 +11489,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1722079817}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -10925,7 +11516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -10949,7 +11540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -11570,7 +12161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -11603,7 +12194,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1901180695}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -11630,7 +12221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -11654,7 +12245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -12013,7 +12604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -12046,7 +12637,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1536574467}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -12073,7 +12664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -12097,7 +12688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -12937,7 +13528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -12970,7 +13561,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 2139995705}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -12997,7 +13588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -13021,7 +13612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -13230,7 +13821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -13263,7 +13854,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1806728547}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -13290,7 +13881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -13314,7 +13905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -13745,6 +14336,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1080496347 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 310884217}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1090437945
 GameObject:
   m_ObjectHideFlags: 0
@@ -13989,7 +14591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -14022,7 +14624,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1864986284}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -14049,7 +14651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -14073,7 +14675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -14426,7 +15028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -14459,7 +15061,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1137207233}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -14486,7 +15088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -14510,7 +15112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -14617,6 +15219,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1137207233 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1137207224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!114 &1140976497 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7001195054996475358, guid: 328ca167c3055284f922434095049579, type: 3}
@@ -14908,7 +15521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -14941,7 +15554,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1374595696}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -14968,7 +15581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -14992,7 +15605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -15277,7 +15890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -15310,7 +15923,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1210614931}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -15337,7 +15950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -15361,7 +15974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -15436,6 +16049,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1210614931 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1210614928}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &1224747599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15579,7 +16203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -15612,7 +16236,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1670612741}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -15639,7 +16263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -15663,7 +16287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -16053,7 +16677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -16086,7 +16710,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1296337829}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -16113,7 +16737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -16137,7 +16761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -16244,6 +16868,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1296337829 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1296337824}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!114 &1296438397 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2484874012552473569, guid: 5ba834d701f5f5447bed78e03e041e6c, type: 3}
@@ -16271,6 +16906,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1313708570 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1464248303}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
+--- !u!114 &1314388896 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 733945359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1317246255
 GameObject:
   m_ObjectHideFlags: 0
@@ -16313,6 +16970,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1318285077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 190667679}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1318656578
 GameObject:
   m_ObjectHideFlags: 0
@@ -16472,7 +17140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -16505,7 +17173,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1359668274}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -16532,7 +17200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -16556,7 +17224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -16663,6 +17331,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1359668274 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1359668269}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!114 &1361056158 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2484874012552473569, guid: 5ba834d701f5f5447bed78e03e041e6c, type: 3}
@@ -16674,6 +17353,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a1ec789fedd4048a023e781a8e0b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypebarSwing
+--- !u!114 &1374595696 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1204883260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &1379023157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17160,6 +17850,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1419097232 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 126847393}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &1424393984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17244,7 +17945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -17277,7 +17978,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1735091616}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -17304,7 +18005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -17328,7 +18029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -17769,7 +18470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -17802,7 +18503,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1443996284}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -17829,7 +18530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -17853,7 +18554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -17968,6 +18669,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1443996284 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1443996275}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1452968220
 GameObject:
   m_ObjectHideFlags: 0
@@ -18182,7 +18894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -18215,7 +18927,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1313708570}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -18242,7 +18954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -18266,7 +18978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -18482,6 +19194,17 @@ Transform:
   - {fileID: 862438545}
   m_Father: {fileID: 757317008}
   m_LocalEulerAnglesHint: {x: 0, y: 37, z: 0}
+--- !u!114 &1536574467 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 935380813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &1554839750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18552,7 +19275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -18585,7 +19308,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 2015687295}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -18612,7 +19335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -18636,7 +19359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -18762,6 +19485,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1561531229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 281189313}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1562042356
 GameObject:
   m_ObjectHideFlags: 0
@@ -19483,7 +20217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -19516,7 +20250,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1605052373}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -19543,7 +20277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -19567,7 +20301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -19682,6 +20416,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1605052373 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1605052364}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &1611116055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20343,6 +21088,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1670612741 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1239322156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!114 &1671144248 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2484874012552473569, guid: 5ba834d701f5f5447bed78e03e041e6c, type: 3}
@@ -20354,6 +21110,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a1ec789fedd4048a023e781a8e0b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypebarSwing
+--- !u!114 &1672894631 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 716418348}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &1680704229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20424,7 +21191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -20457,7 +21224,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1696303114}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -20484,7 +21251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -20508,7 +21275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -20696,7 +21463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -20729,7 +21496,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1694142016}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -20756,7 +21523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -20780,7 +21547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -20895,6 +21662,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1694142016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1694142007}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!114 &1695977352 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2484874012552473569, guid: 5ba834d701f5f5447bed78e03e041e6c, type: 3}
@@ -20917,6 +21695,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1696303114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1680704229}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1707049226
 GameObject:
   m_ObjectHideFlags: 0
@@ -21152,6 +21941,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1722079817 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 819497009}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &1726622744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21238,7 +22038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -21267,7 +22067,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1751869566}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -21294,7 +22094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -21318,7 +22118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
@@ -21457,6 +22257,17 @@ Transform:
   - {fileID: 193659844}
   m_Father: {fileID: 757317008}
   m_LocalEulerAnglesHint: {x: 0, y: 29, z: 0}
+--- !u!114 &1735091616 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1424393984}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1740087252
 GameObject:
   m_ObjectHideFlags: 0
@@ -21522,6 +22333,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a1ec789fedd4048a023e781a8e0b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypebarSwing
+--- !u!114 &1751869566 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1726622744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1765356955
 GameObject:
   m_ObjectHideFlags: 0
@@ -21811,6 +22633,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1857501234}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MoveLeft
       objectReference: {fileID: 0}
@@ -21945,6 +22775,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796896613}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1806728547 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1009798421}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &1817155262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22248,7 +23089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -22281,7 +23122,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1829923233}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -22308,7 +23149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -22332,7 +23173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -22447,6 +23288,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1829923233 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1829923224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1832588661
 GameObject:
   m_ObjectHideFlags: 0
@@ -23011,7 +23863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -23044,7 +23896,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1847146404}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -23071,7 +23923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -23095,7 +23947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -23202,6 +24054,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1847146404 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1847146395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1852531835
 GameObject:
   m_ObjectHideFlags: 0
@@ -23379,7 +24242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -23412,7 +24275,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1862211166}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -23439,7 +24302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -23463,7 +24326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -23570,6 +24433,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1862211166 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1862211157}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
+--- !u!114 &1864986284 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1117237777}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
+--- !u!114 &1871194958 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 383258060}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &1878332765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23713,7 +24609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -23746,7 +24642,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1887223911}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -23773,7 +24669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -23797,7 +24693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -23904,6 +24800,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1887223911 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1887223902}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1889732556
 GameObject:
   m_ObjectHideFlags: 0
@@ -24139,6 +25046,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1901180695 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 910908531}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!114 &1904351520 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2484874012552473569, guid: 5ba834d701f5f5447bed78e03e041e6c, type: 3}
@@ -24211,6 +25129,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: visibleAtRuntime
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
@@ -24645,7 +25567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -24678,7 +25600,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 1987436999}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -24705,7 +25627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -24729,7 +25651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -24844,6 +25766,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1987436999 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1987436990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!114 &1988356388 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7001195054996475358, guid: 328ca167c3055284f922434095049579, type: 3}
@@ -24855,6 +25788,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &1988356389 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 372071688}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &1989410019
 GameObject:
   m_ObjectHideFlags: 0
@@ -25160,7 +26104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -25193,7 +26137,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 2014791490}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -25220,7 +26164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -25244,7 +26188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -25351,6 +26295,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &2014791490 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 2014791481}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
+--- !u!114 &2015687295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 1554839750}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &2019288126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25494,7 +26460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -25527,7 +26493,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 2023167579}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -25554,7 +26520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -25578,7 +26544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -25685,6 +26651,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &2023167579 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 2023167570}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &2031804856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25790,6 +26767,17 @@ Transform:
   - {fileID: 681425690}
   m_Father: {fileID: 757317008}
   m_LocalEulerAnglesHint: {x: 0, y: -7, z: 0}
+--- !u!114 &2042834458 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 271237869}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1 &2042943213
 GameObject:
   m_ObjectHideFlags: 0
@@ -25895,6 +26883,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a1ec789fedd4048a023e781a8e0b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypebarSwing
+--- !u!114 &2055980453 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 14889771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!4 &2060034730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 397672150562313432, guid: 328ca167c3055284f922434095049579, type: 3}
@@ -26129,9 +27128,11 @@ Transform:
   - {fileID: 1424393987}
   - {fileID: 1847146398}
   - {fileID: 1210614929}
-  - {fileID: 113846851}
+  - {fileID: 490493056}
+  - {fileID: 743848084}
   - {fileID: 1793348906}
   - {fileID: 1407605768}
+  - {fileID: 599357819}
   - {fileID: 108642532}
   - {fileID: 2060034730}
   m_Father: {fileID: 0}
@@ -26600,7 +27601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -26633,7 +27634,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 2081413107}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -26660,7 +27661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -26684,7 +27685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -26791,6 +27792,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &2081413107 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 2081413098}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!114 &2084553644 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7001195054996475358, guid: 328ca167c3055284f922434095049579, type: 3}
@@ -26834,6 +27846,17 @@ Transform:
   - {fileID: 609432067}
   m_Father: {fileID: 757317008}
   m_LocalEulerAnglesHint: {x: 0, y: -11, z: 0}
+--- !u!114 &2108462162 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 254859834}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &2118374406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26918,7 +27941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -26951,7 +27974,7 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 2118374415}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -26978,7 +28001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -27002,7 +28025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
@@ -27117,6 +28140,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &2118374415 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 2118374406}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!114 &2132024811 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2484874012552473569, guid: 5ba834d701f5f5447bed78e03e041e6c, type: 3}
@@ -27139,6 +28173,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a1ec789fedd4048a023e781a8e0b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypebarSwing
+--- !u!114 &2139995705 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 994101425}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!1001 &4964021645646666364
 PrefabInstance:
   m_ObjectHideFlags: 0
