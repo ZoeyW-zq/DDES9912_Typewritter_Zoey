@@ -9815,9 +9815,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: m_text
-      value: 'margin
+      value: 'BACK
 
-        release'
+        SPACE'
       objectReference: {fileID: 0}
     - target: {fileID: 397672149954006245, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: m_fontSize
