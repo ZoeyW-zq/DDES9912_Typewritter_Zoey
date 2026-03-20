@@ -269,6 +269,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8157043946459995008, guid: 89f7238d42a1e4944903f82e2200a073, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7001195054996475358}
+    - targetCorrespondingSourceObject: {fileID: 8157043946459995008, guid: 89f7238d42a1e4944903f82e2200a073, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3521432419668782685}
     - targetCorrespondingSourceObject: {fileID: 6480118751683919911, guid: 89f7238d42a1e4944903f82e2200a073, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1185847565431258012}
@@ -295,6 +298,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
   pressDistance: 0.1
   speed: 1
+--- !u!114 &3521432419668782685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397672150562313435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
+  lowerChar: 
+  upperChar: 
+  keyboardState: {fileID: 0}
+  printer: {fileID: 0}
 --- !u!1 &3267772048853520252 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6480118751683919911, guid: 89f7238d42a1e4944903f82e2200a073, type: 3}

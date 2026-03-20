@@ -8,6 +8,8 @@ public class Transformer : MonoBehaviour
     Transform targetTransform;
     [SerializeField]
     float speed;
+
+    bool movable = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,7 +31,10 @@ public class Transformer : MonoBehaviour
 
     public void MoveLeft(float distance)
     {
-        StartCoroutine(StrikeDelay(distance));
+        if (movable)
+        {
+            StartCoroutine(StrikeDelay(distance));
+        }
     }
     IEnumerator StrikeDelay(float distance)
     {
@@ -39,6 +44,7 @@ public class Transformer : MonoBehaviour
     public void MoveTo(Transform position)
     {
         targetTransform.position = position.position;
+        enableMoveLeft();
     }
 
     public void ScaleYAxis(float amount)
@@ -49,5 +55,15 @@ public class Transformer : MonoBehaviour
     public void RotateTo(Transform rotation)
     {
         targetTransform.rotation = rotation.rotation;
+    }
+
+    public void disableMoveLeft()
+    {
+        movable = false;
+    }
+
+    public void enableMoveLeft()
+    {
+        movable = true;
     }
 }

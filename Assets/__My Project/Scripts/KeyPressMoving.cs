@@ -1,8 +1,7 @@
 using UnityEngine;
 
-public class KeyPress : MonoBehaviour
+public class KeyPressMoving : MonoBehaviour
 {
-    [Header("Movement Settings")]
     [SerializeField] float pressDistance = 0.1f;   
     [SerializeField] float speed = 0.1f;         
 

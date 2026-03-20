@@ -437,6 +437,30 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: $
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: $
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -527,7 +551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &50641425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,7 +623,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 909467706341746516, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1908548294494100974, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: m_Name
@@ -667,7 +691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: visibleAtRuntime
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
       propertyPath: onTriggerStay.m_PersistentCalls.m_Calls.Array.size
@@ -1174,6 +1198,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: k
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: K
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1328,7 +1368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1339,6 +1379,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 108642533}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -1347,18 +1391,31 @@ PrefabInstance:
       value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ToggleShiftLock
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: KeyPress, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: KeyboardState, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1565,7 +1622,8 @@ PrefabInstance:
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
       value: -0.05
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1880,6 +1938,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: l
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: L
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -2192,6 +2266,135 @@ Transform:
   - {fileID: 1621182045}
   m_Father: {fileID: 757317008}
   m_LocalEulerAnglesHint: {x: 0, y: 35, z: 0}
+--- !u!1 &184199955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1908548294494100974, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+  m_PrefabInstance: {fileID: 1909509708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &184199956
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184199955}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 24dec8594c7b14344a9448fe1590ed65, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!54 &184199962
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184199955}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &189393955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2445,6 +2648,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: s
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: S
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -3101,6 +3320,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: d
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: D
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -3413,6 +3648,30 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: '-'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: =
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: '-'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: =
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -3723,6 +3982,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: z
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: Z
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -4194,6 +4469,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: b
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: B
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -4698,6 +4989,30 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: "\xBC"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: "\xBC"
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -5392,6 +5707,30 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: y
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: Y
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: y
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: Y
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -5625,6 +5964,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: u
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: U
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -6624,7 +6979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555311678}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7918,6 +8273,22 @@ PrefabInstance:
       propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: i
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: I
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -8287,6 +8658,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: g
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: G
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -8593,6 +8980,7 @@ PrefabInstance:
     - {fileID: 8571273341173141825, guid: 328ca167c3055284f922434095049579, type: 3}
     - {fileID: 4643911158425477729, guid: 328ca167c3055284f922434095049579, type: 3}
     - {fileID: 5250142224091616520, guid: 328ca167c3055284f922434095049579, type: 3}
+    - {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
     m_RemovedGameObjects:
     - {fileID: 397672150387816235, guid: 328ca167c3055284f922434095049579, type: 3}
     m_AddedGameObjects: []
@@ -8789,6 +9177,30 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: t
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: T
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: t
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: T
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -9035,7 +9447,7 @@ MonoBehaviour:
   onPrimaryInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1591611629}
+      - m_Target: {fileID: 1714839331}
         m_TargetAssemblyTypeName: Transformer, Assembly-CSharp
         m_MethodName: MoveUp
         m_Mode: 4
@@ -10575,6 +10987,30 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: "\xBE"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: "\xBE"
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -11256,6 +11692,30 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: '&'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: '&'
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -11674,6 +12134,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: n
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: N
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -12583,6 +13059,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: m
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: M
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -12860,6 +13352,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: "\u215E"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: "\u215D "
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -12938,7 +13446,7 @@ Transform:
   m_GameObject: {fileID: 1021469102}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.983, y: 1.97, z: 1.279}
+  m_LocalPosition: {x: -0.45, y: 1.97, z: 1.279}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13603,6 +14111,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: f
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: F
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -14023,6 +14547,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: p
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: P
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -14490,6 +15030,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: j
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: J
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -14572,8 +15128,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1591611628}
   - {fileID: 555311679}
+  - {fileID: 1714839330}
   m_Father: {fileID: 1857501233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1209655946
@@ -14842,6 +15398,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: /
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: '%'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15128,6 +15700,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: o
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: O
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -15587,6 +16175,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: c
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: C
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -15667,6 +16271,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!1 &1317246255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317246256}
+  m_Layer: 0
+  m_Name: CharacterContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1317246256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317246255}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1714839330}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1318285076 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7001195054996475358, guid: 328ca167c3055284f922434095049579, type: 3}
@@ -15958,6 +16593,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: h
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: H
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -16430,7 +17081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -16441,6 +17092,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1407605769}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -16449,18 +17104,31 @@ PrefabInstance:
       value: PressKey
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PressShift
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: KeyPress, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: KeyboardState, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16697,6 +17365,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: ','
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: '?'
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -17207,6 +17891,30 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: "\u215C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: "\u215B "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: "\u215C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: "\u215B "
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -17260,6 +17968,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!1 &1452968220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1452968222}
+  - component: {fileID: 1452968221}
+  m_Layer: 0
+  m_Name: PrintPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1452968221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452968220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f261f44fa0bac4cab3a211f1a7dadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Printer
+  hitPoint: {fileID: 1452968222}
+  characterParent: {fileID: 1317246256}
+  characterPrefab: {fileID: 3838974092612239385, guid: 664820e93b62f194980731afb53f2371, type: 3}
+--- !u!4 &1452968222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452968220}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.036, y: 1.8105197, z: 0.513}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1453907726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 397672149954006247, guid: 328ca167c3055284f922434095049579, type: 3}
@@ -17548,6 +18303,30 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: e
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: E
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: e
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: E
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -17894,6 +18673,30 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: w
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: W
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: w
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: W
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -18468,7 +19271,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 387662568}
-  m_Father: {fileID: 1209119467}
+  m_Father: {fileID: 1714839330}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1591611629
 MonoBehaviour:
@@ -18482,8 +19285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a95cb92fcadc4a4090cb423f71d7934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Transformer
-  targetTransform: {fileID: 555311679}
-  speed: 0.2
+  targetTransform: {fileID: 1591611628}
+  speed: 0
 --- !u!1 &1594633696
 GameObject:
   m_ObjectHideFlags: 0
@@ -18801,6 +19604,30 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: )
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: )
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -19459,7 +20286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Transformer
   targetTransform: {fileID: 1852531836}
-  speed: 50
+  speed: 60
 --- !u!114 &1660526432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19719,6 +20546,30 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: q
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: Q
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: q
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: Q
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -19966,6 +20817,30 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: (
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: (
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -20218,6 +21093,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8463966553367298693, guid: 5ba834d701f5f5447bed78e03e041e6c, type: 3}
   m_PrefabInstance: {fileID: 1710653285}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1714839329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1714839330}
+  - component: {fileID: 1714839331}
+  m_Layer: 0
+  m_Name: PaperContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1714839330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714839329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1317246256}
+  - {fileID: 1591611628}
+  m_Father: {fileID: 1209119467}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1714839331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714839329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a95cb92fcadc4a4090cb423f71d7934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Transformer
+  targetTransform: {fileID: 555311679}
+  speed: 0.2
 --- !u!114 &1722079816 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7001195054996475358, guid: 328ca167c3055284f922434095049579, type: 3}
@@ -20424,6 +21347,30 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: '"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: '"'
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -20875,7 +21822,8 @@ PrefabInstance:
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
       value: 0.25
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -21421,6 +22369,30 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: ''''
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: ''''
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -22161,6 +23133,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: .
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: .
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -22282,7 +23270,7 @@ Transform:
   m_GameObject: {fileID: 1857501232}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.54, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22308,7 +23296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Transformer
   targetTransform: {fileID: 25093850}
-  speed: 0.3
+  speed: 0.5
 --- !u!1001 &1862211157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22512,6 +23500,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: ;
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: "\xBD"
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -22831,6 +23835,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: v
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: V
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -23141,6 +24161,121 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a1ec789fedd4048a023e781a8e0b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypebarSwing
+--- !u!1001 &1909509708
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1908548294494100974, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_Name
+      value: EZPZ Area Trigger - Filtered Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.717
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1368954
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210193481506443335, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1857501234}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 184199956}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: disableMoveLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Transformer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814196826860576878, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1908548294494100974, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 184199956}
+    - targetCorrespondingSourceObject: {fileID: 1908548294494100974, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 184199962}
+  m_SourcePrefab: {fileID: 100100000, guid: 2f72675cc6f4f58478ca7f3b9197aa78, type: 3}
 --- !u!1 &1921765077
 GameObject:
   m_ObjectHideFlags: 0
@@ -23631,6 +24766,30 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: r
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: R
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: r
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: R
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -24123,6 +25282,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: ':'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: '@'
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -24440,6 +25615,22 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: A
       objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
@@ -24873,6 +26064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2070142728}
+  - component: {fileID: 2070142729}
   m_Layer: 0
   m_Name: Keyboard
   m_TagString: Untagged
@@ -24944,6 +26136,18 @@ Transform:
   - {fileID: 2060034730}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2070142729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070142727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404a6d5ff76744e4fae842524d50e339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyboardState
 --- !u!1 &2070359016
 GameObject:
   m_ObjectHideFlags: 0
@@ -25518,6 +26722,22 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: x
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: X
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -25820,6 +27040,30 @@ PrefabInstance:
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: ---
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: ---
+      objectReference: {fileID: 0}
     - target: {fileID: 8384719770570418329, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onHoverExitBackground.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -25987,7 +27231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.size
@@ -26010,6 +27254,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4964021645646666371}
@@ -26024,7 +27272,11 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 782953024}
+      objectReference: {fileID: 4964021645646666372}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1857501232}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 4
@@ -26042,6 +27294,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PressKey
       objectReference: {fileID: 0}
@@ -26055,7 +27311,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: Strike
+      value: PressKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -26083,7 +27343,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: RotateAndBack, Assembly-CSharp
+      value: KeyPressCharacter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: KeyPressCharacter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
@@ -26100,6 +27364,14 @@ PrefabInstance:
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_FloatArgument
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_FloatArgument
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -26122,8 +27394,44 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018605223122988650, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: onPrimaryInteractLift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2906190048224883311, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 2906190048224883311, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: printer
+      value: 
+      objectReference: {fileID: 1452968221}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerChar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperChar
+      value: +
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: keyboardState
+      value: 
+      objectReference: {fileID: 2070142729}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: lowerCharacter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+      propertyPath: upperCharacter
+      value: +
       objectReference: {fileID: 0}
     - target: {fileID: 6620157570022543562, guid: 328ca167c3055284f922434095049579, type: 3}
       propertyPath: m_RaycastTriggerInteraction
@@ -26201,7 +27509,8 @@ PrefabInstance:
       propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2906190048224883311, guid: 328ca167c3055284f922434095049579, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -26222,6 +27531,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1849e197f128404ba07d93c292b6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPress
+--- !u!114 &4964021645646666372 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3521432419668782685, guid: 328ca167c3055284f922434095049579, type: 3}
+  m_PrefabInstance: {fileID: 4964021645646666364}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b75a0f9f4fc84b89aa90ee4608651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPressCharacter
 --- !u!23 &4974419029791364482
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31267,3 +32587,5 @@ SceneRoots:
   - {fileID: 782953023}
   - {fileID: 1506074969}
   - {fileID: 757317008}
+  - {fileID: 1452968222}
+  - {fileID: 1909509708}
