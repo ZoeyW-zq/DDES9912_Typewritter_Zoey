@@ -42,7 +42,7 @@ public class KeyboardMap : MonoBehaviour
             //Debug.Log(key2Press[i]);
         }
 
-        MoveToPress.Invoke("MoveFinger",0.1f);
+        StartCoroutine(MoveToPress.MoveFinger());
     }
 
     void AddChildTransform()
