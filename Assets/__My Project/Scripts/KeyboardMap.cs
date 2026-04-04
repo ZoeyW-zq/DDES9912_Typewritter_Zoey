@@ -1,18 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class KeyboardMap : MonoBehaviour
 {
-    Dictionary<char, Transform> keyLocationMap;
+    public enum Hand
+    {
+        Left,
+        Right
+    }
+    public Dictionary<char, (Transform,Hand)> keyLocationMap;
 
     [SerializeField]
     Transform[] keysTransform;
 
     public string text2Print;
-    public Vector3[] key2Press;
+    public Dictionary<char, (Transform, Hand)> key2Press;
 
     public MoveToPress MoveToPress;
+    public Transform centerPosition;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,20 +34,25 @@ public class KeyboardMap : MonoBehaviour
         'A','S','D','F','G','H','J','K','L', ';', ':',
         'Z','X','C','V','B','N','M', ',', '.', '/',' ',
         };
-        keyLocationMap = new Dictionary<char, Transform>();
+        keyLocationMap = new Dictionary<char, (Transform, Hand)>();
         for (int i = 0;i<keys.Length; i++)
         {
-            keyLocationMap.Add(keys[i], keysTransform[i]);
+            if (keysTransform[i].position.x < centerPosition.position.x)
+            {
+                keyLocationMap.Add(keys[i], (keysTransform[i],Hand.Left));
+            }
+            else
+            {
+                keyLocationMap.Add(keys[i], (keysTransform[i], Hand.Right));
+            }
         }
-        foreach (char key in text2Print)
-        {
-            Debug.Log("key:" + key + "   Transform:" + keyLocationMap[key].position);
-        }
+        
 
-        key2Press = new Vector3[text2Print.Length];
+        key2Press = new Dictionary<char, (Transform, Hand)>();
         for (int i = 0; i<text2Print.Length; i++)
         {
-            key2Press[i] = keyLocationMap[text2Print[i]].position;
+            //key2Press.Add(text2Print[i],keyLocationMap[text2Print[i]]);
+            key2Press[text2Print[i]] = (keyLocationMap[text2Print[i]].Item1, keyLocationMap[text2Print[i]].Item2);
             //Debug.Log(key2Press[i]);
         }
 

@@ -1,53 +1,82 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
+using UnityEngine.XR;
 
 public class MoveToPress : MonoBehaviour
 {
     public KeyboardMap keyMap;
-    public Transform targetPosition;
-    public KeyPressMoving press;
-
-    [SerializeField] float pressDistance = 0.1f;
+    public Transform targetPositionRightHand;
+    public Transform targetPositionLeftHand;
+    public Transform RigRightHand;
+    public Transform RigLeftHand;
     [SerializeField] float speed = 0.5f;
-
+    
    
 
     void Start()
     {
-       
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position,targetPosition.position, speed*Time.deltaTime);
+        RigRightHand.position = Vector3.MoveTowards(RigRightHand.position,targetPositionRightHand.position, speed*Time.deltaTime);
+        RigLeftHand.position = Vector3.MoveTowards(RigLeftHand.position, targetPositionLeftHand.position, speed * Time.deltaTime);
 
     }
      public IEnumerator MoveFinger()
     {
-        for (int i = 0; i < keyMap.key2Press.Length; i++)
+        yield return new WaitForSeconds(2);
+        for (int i = 0; i < keyMap.text2Print.Length; i++)
         {
-            Vector3 keyPosition = keyMap.key2Press[i];
+            var keyInfo = keyMap.key2Press[keyMap.text2Print[i]];
+            Vector3 keyPosition = keyInfo.Item1.position;
             Vector3 pressPosition = keyPosition + Vector3.up * 0.1f;
-            targetPosition.position = pressPosition;
-            Debug.Log(targetPosition.position);
-            yield return new WaitForSeconds(1);
-            Press();
-            yield return new WaitForSeconds(0.5f);
-            Lift();
-            yield return new WaitForSeconds(0.5f);
+            if(keyInfo.Item2 == KeyboardMap.Hand.Left)
+            {
+                targetPositionLeftHand.position = pressPosition;
+                yield return new WaitForSeconds(1);
+                Press(targetPositionLeftHand);
+                TypewriterResponse(i);
+                yield return new WaitForSeconds(0.2f);
+                Lift(targetPositionLeftHand);
+                yield return new WaitForSeconds(0.2f);
+            }
+            else
+            {
+                targetPositionRightHand.position = pressPosition;
+                yield return new WaitForSeconds(1);
+                Press(targetPositionRightHand);
+                TypewriterResponse(i);
+                yield return new WaitForSeconds(0.2f);
+                Lift(targetPositionRightHand);
+                yield return new WaitForSeconds(0.2f);
+            }
+
+            
         }
     }
 
-    void Press()
+    void Press(Transform hand)
     {
-        targetPosition.position += Vector3.down * 0.1f;
-        Debug.Log(targetPosition.position);
+        hand.position += Vector3.down * 0.05f;
     }
 
-    void Lift()
+    void Lift(Transform hand)
     {
-        targetPosition.position += Vector3.up *0.1f;
+        hand.position += Vector3.up *0.05f;
+    }
+
+    void TypewriterResponse(int i)
+    {
+        Debug.Log("key: " + keyMap.key2Press[keyMap.text2Print[i]].Item1.name + "   position:" + keyMap.key2Press[keyMap.text2Print[i]].Item1.position
+             + "   hand:" + keyMap.key2Press[keyMap.text2Print[i]].Item2);
+
+        InteractableGeneral onPrimaryInteract = keyMap.keyLocationMap[keyMap.text2Print[i]].Item1.GetComponentInChildren<InteractableGeneral>();
+        onPrimaryInteract.onPrimaryInteract.Invoke();
+        onPrimaryInteract.onPrimaryInteractLift.Invoke();
     }
 }
