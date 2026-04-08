@@ -8,7 +8,7 @@ public class Transformer : MonoBehaviour
     Transform targetTransform;
     [SerializeField]
     float speed;
-
+    public float yScaleLimit = 5.0f;
     bool movable = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -49,7 +49,11 @@ public class Transformer : MonoBehaviour
 
     public void ScaleYAxis(float amount)
     {
-        transform.localScale += Vector3.up * amount;
+        if (transform.localScale.y < yScaleLimit)
+        {
+
+            transform.localScale += Vector3.up * amount;
+        }
     }
 
     public void RotateTo(Transform rotation)

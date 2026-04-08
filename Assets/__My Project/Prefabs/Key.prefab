@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 7984264847928323586}
   - component: {fileID: 5113268303665353806}
   - component: {fileID: 5874155907185168992}
-  - component: {fileID: 2470057154240727367}
+  - component: {fileID: 11115837069791663}
   m_Layer: 0
   m_Name: InteractionBox
   m_TagString: Untagged
@@ -777,8 +777,8 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_MaxRayIntersections: 10
   m_EventCamera: {fileID: 0}
---- !u!135 &2470057154240727367
-SphereCollider:
+--- !u!65 &11115837069791663
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -796,8 +796,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.1692809
-  m_Center: {x: -0, y: 0, z: -0.27}
+  m_Size: {x: 0.32114562, y: 1, z: 1.4598275}
+  m_Center: {x: -0.0010362674, y: -1.3006016e-16, z: 0.039060675}
 --- !u!1 &9221405437935691868
 GameObject:
   m_ObjectHideFlags: 0

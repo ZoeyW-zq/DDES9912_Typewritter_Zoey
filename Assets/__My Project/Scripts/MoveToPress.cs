@@ -40,7 +40,6 @@ public class MoveToPress : MonoBehaviour
                 targetPositionLeftHand.position = pressPosition;
                 yield return new WaitForSeconds(1);
                 Press(targetPositionLeftHand);
-                TypewriterResponse(i);
                 yield return new WaitForSeconds(0.2f);
                 Lift(targetPositionLeftHand);
                 yield return new WaitForSeconds(0.2f);
@@ -50,7 +49,6 @@ public class MoveToPress : MonoBehaviour
                 targetPositionRightHand.position = pressPosition;
                 yield return new WaitForSeconds(1);
                 Press(targetPositionRightHand);
-                TypewriterResponse(i);
                 yield return new WaitForSeconds(0.2f);
                 Lift(targetPositionRightHand);
                 yield return new WaitForSeconds(0.2f);
@@ -62,21 +60,13 @@ public class MoveToPress : MonoBehaviour
 
     void Press(Transform hand)
     {
-        hand.position += Vector3.down * 0.05f;
+        hand.position += Vector3.down * 0.07f;
     }
 
     void Lift(Transform hand)
     {
-        hand.position += Vector3.up *0.05f;
+        hand.position += Vector3.up *0.07f;
     }
-
-    void TypewriterResponse(int i)
-    {
-        Debug.Log("key: " + keyMap.key2Press[keyMap.text2Print[i]].Item1.name + "   position:" + keyMap.key2Press[keyMap.text2Print[i]].Item1.position
-             + "   hand:" + keyMap.key2Press[keyMap.text2Print[i]].Item2);
-
-        InteractableGeneral onPrimaryInteract = keyMap.keyLocationMap[keyMap.text2Print[i]].Item1.GetComponentInChildren<InteractableGeneral>();
-        onPrimaryInteract.onPrimaryInteract.Invoke();
-        onPrimaryInteract.onPrimaryInteractLift.Invoke();
-    }
+    
+   
 }

@@ -55,8 +55,11 @@ public class KeyboardMap : MonoBehaviour
             key2Press[text2Print[i]] = (keyLocationMap[text2Print[i]].Item1, keyLocationMap[text2Print[i]].Item2);
             //Debug.Log(key2Press[i]);
         }
-
-        StartCoroutine(MoveToPress.MoveFinger());
+        if (MoveToPress)
+        {
+            StartCoroutine(MoveToPress.MoveFinger());
+        }
+        
     }
 
     void AddChildTransform()
