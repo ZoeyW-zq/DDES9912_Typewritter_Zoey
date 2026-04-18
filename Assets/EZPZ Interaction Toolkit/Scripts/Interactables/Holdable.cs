@@ -39,7 +39,7 @@ public class Holdable : InteractableGeneral
 
         if(myRbody != null)
         {
-            originalUseGravity = myRbody.useGravity;
+            //originalUseGravity = myRbody.useGravity;
         }
 
         if(subCollliders.Length <= 0)
