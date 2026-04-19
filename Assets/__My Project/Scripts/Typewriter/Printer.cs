@@ -9,9 +9,16 @@ public class Printer : MonoBehaviour
     [SerializeField]
     Transform characterParent;
 
+    private void Start()
+    {
+        //FindCharacterContainer();
+    }
+
     public void PrintCharacter(string letter)
     {
-        characterParent = paperMovingSystem.transform.Find("PaperContainer/CharacterContainer");
+        FindCharacterContainer();
+        
+        
         GameObject c = Instantiate(
             characterPrefab,
             hitPoint.position,
@@ -20,5 +27,21 @@ public class Printer : MonoBehaviour
         );
 
         c.GetComponent<TypeCharacter>().SetCharacter(letter);
+    }
+
+    void FindCharacterContainer()
+    {
+        if (paperMovingSystem.transform.Find("PaperContainer/CharacterContainer"))
+        {
+            characterParent = paperMovingSystem.transform.Find("PaperContainer/CharacterContainer");
+        }
+        else if (paperMovingSystem.transform.Find("PaperContainer(Clone)/CharacterContainer"))
+        {
+            characterParent = paperMovingSystem.transform.Find("PaperContainer(Clone)/CharacterContainer");
+        }
+        else
+        {
+            Debug.LogError("Can't find PaperContainer/CharacterContainer");
+        }
     }
 }

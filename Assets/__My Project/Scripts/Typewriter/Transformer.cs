@@ -19,9 +19,20 @@ public class Transformer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        transform.position = Vector3.MoveTowards(transform.position, targetTransform.position, speed * Time.deltaTime);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetTransform.rotation, speed * Time.deltaTime);
+        if(targetTransform)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetTransform.position, speed * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetTransform.rotation, speed * Time.deltaTime);
+        }
+        else
+        {
+            if (transform.parent.Find("targetPosition"))
+            {
+                targetTransform = transform.parent.Find("targetPosition");
+            }
+        }
+
+            
     }
 
     public void MoveUp(float distance)

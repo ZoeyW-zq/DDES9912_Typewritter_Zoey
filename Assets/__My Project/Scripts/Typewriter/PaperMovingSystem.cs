@@ -1,19 +1,19 @@
+﻿using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Transformation;
 
 public class PaperMovingSystem : MonoBehaviour
 {
-    [SerializeField]
-    Transform paperContainer;
-    [SerializeField]
-    Transform paperScaler;
-    [SerializeField]
-    Transform paper;
+    public Transform paperContainer;
+    public Transform paperScaler;
     public float distance = 0.01f;
     public float scaleAmount = 0.075f;
+    Transform paper;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GetPaper();
+        UpdateCollider();
     }
 
     // Update is called once per frame
@@ -28,12 +28,11 @@ public class PaperMovingSystem : MonoBehaviour
         {
             PaperMoveUp();
             PaperYScale();
+            UpdateCollider();
         }
         else
         {
-            GetPaper();
-            PaperMoveUp();
-            PaperYScale();
+            Debug.LogError("There is no paper!! PLEASE put a new paper!");
         }
     }
 
@@ -50,7 +49,7 @@ public class PaperMovingSystem : MonoBehaviour
         scaleY.ScaleYAxis(scaleAmount);
     }
 
-    void GetPaper()
+    public void GetPaper()
     {
         foreach (Transform child in transform)
         {
@@ -71,10 +70,37 @@ public class PaperMovingSystem : MonoBehaviour
         
     }
 
-    void UpdateCollider()
+    void UpdateCollider1()
     {
         BoxCollider collider = paperContainer.GetComponent<BoxCollider>();
-        MeshRenderer renderer = paper.GetComponent<MeshRenderer>();
-        collider.size = renderer.bounds.size;
+        Renderer renderer = paper.GetComponent<MeshRenderer>();
+        Bounds bounds = renderer.bounds;
+
+        Vector3 center = collider.transform.InverseTransformPoint(bounds.center);
+        Vector3 size = collider.transform.InverseTransformPoint(bounds.size);
+
+        collider.center = center;
+        collider.size = size;  
+    }
+
+    public void UpdateCollider()
+    {
+        BoxCollider collider = paperContainer.GetComponent<BoxCollider>();
+        BoxCollider boxCollider = paper.GetComponent<BoxCollider>();
+
+        Vector3 worldcenter = boxCollider.transform.TransformPoint(boxCollider.center);
+        Vector3 localCenter = collider.transform.InverseTransformPoint(worldcenter);
+        Vector3 worldSize = Vector3.Scale(boxCollider.size, boxCollider.transform.lossyScale);
+
+        // 4️⃣ 转换到 self 的本地 size
+        Vector3 localSize = new Vector3(
+            (worldSize.x / collider.transform.lossyScale.x),
+            (worldSize.y / collider.transform.lossyScale.y),
+            (worldSize.z / collider.transform.lossyScale.z)* 1.1f
+        );
+
+
+        collider.center = localCenter;
+        collider.size = localSize;
     }
 }
