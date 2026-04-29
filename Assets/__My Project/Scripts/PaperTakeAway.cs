@@ -35,7 +35,7 @@ public class PaperTakeAway : MonoBehaviour
 
             hasUpdate = true;
         }
-        
+
     }
 
     void DisconnectedFromMovingSystem()

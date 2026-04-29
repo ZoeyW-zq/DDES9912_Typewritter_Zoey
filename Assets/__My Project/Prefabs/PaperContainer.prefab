@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 5161082834320790145}
   - component: {fileID: 1405722736317853005}
   - component: {fileID: 5154123240107218732}
+  - component: {fileID: -5851353883138852290}
   m_Layer: 0
   m_Name: PaperContainer
   m_TagString: Untagged
@@ -343,6 +344,19 @@ MonoBehaviour:
   originalUseGravity: 0
   moving: 0
   subCollliders: []
+--- !u!114 &-5851353883138852290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787522509801423318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a870b3a921a07df43a56b3f767e680fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerFilter
+  filterString: paper
 --- !u!1 &8477667313750585981
 GameObject:
   m_ObjectHideFlags: 0

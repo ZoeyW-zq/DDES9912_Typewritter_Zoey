@@ -16,17 +16,18 @@ public class FingerInteractable : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-       subject = other.GetComponent<InteractableGeneral>();
-        if (subject != null)
+        if (other.name == "InteractionBox")
         {
+            subject = other.GetComponent<InteractableGeneral>();
             subject.onPrimaryInteract.Invoke();
         }
+       
     }
     private void OnTriggerExit(Collider other)
     {
-        subject = other.GetComponent<InteractableGeneral>();
+        
         if (subject != null)
         {
             subject.onPrimaryInteractLift.Invoke();

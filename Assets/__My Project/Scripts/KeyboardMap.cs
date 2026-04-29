@@ -57,7 +57,7 @@ public class KeyboardMap : MonoBehaviour
         }
         if (MoveToPress)
         {
-            StartCoroutine(MoveToPress.MoveFinger());
+            StartCoroutine(MoveToPress.Type());
         }
         
     }

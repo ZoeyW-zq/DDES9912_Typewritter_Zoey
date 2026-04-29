@@ -11,7 +11,10 @@ public class MoveToPress : MonoBehaviour
     public Transform targetPositionLeftHand;
     public Transform RigRightHand;
     public Transform RigLeftHand;
+    public Transform rightHandIdle;
+    public Transform leftHandIdle;
     [SerializeField] float speed = 0.5f;
+    [SerializeField] NPCPaperHandler NPCPaperHandler;
     
    
 
@@ -27,9 +30,11 @@ public class MoveToPress : MonoBehaviour
         RigLeftHand.position = Vector3.MoveTowards(RigLeftHand.position, targetPositionLeftHand.position, speed * Time.deltaTime);
 
     }
-     public IEnumerator MoveFinger()
+     public IEnumerator Type()
     {
-        yield return new WaitForSeconds(2);
+        targetPositionRightHand.position = rightHandIdle.position;
+        targetPositionRightHand.position = leftHandIdle.position;
+        yield return new WaitForSeconds(1);
         for (int i = 0; i < keyMap.text2Print.Length; i++)
         {
             var keyInfo = keyMap.key2Press[keyMap.text2Print[i]];
@@ -54,8 +59,10 @@ public class MoveToPress : MonoBehaviour
                 yield return new WaitForSeconds(0.2f);
             }
 
-            
         }
+        targetPositionRightHand.position = rightHandIdle.position;
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(NPCPaperHandler.TakePaper());
     }
 
     void Press(Transform hand)
@@ -65,7 +72,7 @@ public class MoveToPress : MonoBehaviour
 
     void Lift(Transform hand)
     {
-        hand.position += Vector3.up *0.07f;
+        hand.position += Vector3.up *0.15f;
     }
     
    
