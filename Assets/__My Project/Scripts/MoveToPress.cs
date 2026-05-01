@@ -33,7 +33,7 @@ public class MoveToPress : MonoBehaviour
      public IEnumerator Type()
     {
         targetPositionRightHand.position = rightHandIdle.position;
-        targetPositionRightHand.position = leftHandIdle.position;
+        targetPositionLeftHand.position = leftHandIdle.position;
         yield return new WaitForSeconds(1);
         for (int i = 0; i < keyMap.text2Print.Length; i++)
         {

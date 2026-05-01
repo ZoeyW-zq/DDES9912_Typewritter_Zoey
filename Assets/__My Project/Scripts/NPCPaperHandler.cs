@@ -48,8 +48,11 @@ public class NPCPaperHandler : MonoBehaviour
         //call walkingNPC
         walkingNPC.Walking2PickUp(paper);
 
-        //hand move towards button
+        //right hand press button
         move2Press.targetPositionRightHand.position = button.position;
+        while (Vector3.Distance(move2Press.targetPositionRightHand.position, move2Press.RigRightHand.position) > 0.01f)
+            yield return null;
+        move2Press.targetPositionRightHand.position = move2Press.rightHandIdle.position;
         while (Vector3.Distance(move2Press.targetPositionRightHand.position, move2Press.RigRightHand.position) > 0.01f)
             yield return null;
 
@@ -57,7 +60,7 @@ public class NPCPaperHandler : MonoBehaviour
         move2Press.targetPositionLeftHand.position = handle.position;
         while (Vector3.Distance(move2Press.targetPositionLeftHand.position, move2Press.RigLeftHand.position) > 0.01f)
             yield return null;
-        move2Press.targetPositionLeftHand.position = handle.position + Vector3.up * 0.15f;
+        move2Press.targetPositionLeftHand.position = move2Press.leftHandIdle.position;
         while (Vector3.Distance(move2Press.targetPositionLeftHand.position, move2Press.RigLeftHand.position) > 0.01f)
             yield return null;
         StartCoroutine(move2Press.Type());

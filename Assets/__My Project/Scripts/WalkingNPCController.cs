@@ -7,6 +7,7 @@ public class WalkingNPCController : MonoBehaviour
     public Transform leftHandRig;
     public Transform walking2PickUp;
     public Transform walking2DropOff;
+    public Transform dropOffPosition;
     private float speed = 0.8f;
     private Transform leftHandOriginalTransform;
     public enum State { Idle, Walking2PickUp, Walking2DropOff}
@@ -31,10 +32,11 @@ public class WalkingNPCController : MonoBehaviour
         state = State.Walking2PickUp;
     }
 
-    public void Walking2DropOff()
+    void Walking2DropOff()
     {
         state = State.Walking2DropOff;
         transform.GetComponent<NMAWalkTowards>().SetDestination(walking2DropOff);
+
     }
 
     void OnArrive()
@@ -44,26 +46,37 @@ public class WalkingNPCController : MonoBehaviour
         }
         if(state == State.Walking2DropOff)
         {
-            DropOff();
+            StartCoroutine(DropOff());
         }
         
     }
 
     IEnumerator PickUp()
     {
-        Transform originalPosition = transform;
         targetPosition.position = paper.position;
         while(Vector2.Distance(leftHandRig.position,targetPosition.position)>0.01f)
             yield return null;
 
         paper.SetParent(leftHandRig);
+        paper.GetComponent<Rigidbody>().useGravity = false;
+        paper.GetComponent <Rigidbody>().isKinematic = true;
         Debug.Log("get paper!");
+
+        targetPosition.position = leftHandOriginalTransform.position;
+        while (Vector2.Distance(leftHandRig.position, targetPosition.position) > 0.01f)
+            yield return null;
         Walking2DropOff();
     }
 
-    public void DropOff()
+    IEnumerator DropOff()
     {
+        targetPosition.position = dropOffPosition.position;
+        while (Vector2.Distance(leftHandRig.position, targetPosition.position) > 0.01f)
+            yield return null;
         paper.SetParent(null);
+        paper.GetComponent<Rigidbody>().useGravity = true;
+        paper.GetComponent<Rigidbody>().isKinematic = false;
+
         targetPosition.position = leftHandOriginalTransform.position;
     }
 }
