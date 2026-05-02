@@ -13,6 +13,7 @@ public class NPCPaperHandler : MonoBehaviour
     public Transform button;
     public Transform handle;
     public WalkingNPCController walkingNPC;
+    public Transform NPCdestination;
     [SerializeField]
     Transform paper;
     
@@ -32,7 +33,6 @@ public class NPCPaperHandler : MonoBehaviour
         paper.SetParent(move2Press.RigRightHand,true);
         paper.localPosition = (new Vector3(0f, 0f, 0.15f));
         paper.localRotation = Quaternion.Euler(90, 0, 0);
-        Debug.Log("have reset parent");
         yield return new WaitForSeconds(0.5f);
 
         //move towards destination
@@ -40,13 +40,10 @@ public class NPCPaperHandler : MonoBehaviour
         while (Vector3.Distance(move2Press.targetPositionRightHand.position, move2Press.RigRightHand.position) > 0.01f)
             yield return null;
 
-        //deposit paper
+        //deposit paper on desk — player picks it up from here
         paper.SetParent(null);
         paper.GetComponent<Rigidbody>().isKinematic = false;
         paper.GetComponent<Rigidbody>().useGravity = true;
-
-        //call walkingNPC
-        walkingNPC.Walking2PickUp(paper);
 
         //right hand press button
         move2Press.targetPositionRightHand.position = button.position;
@@ -55,6 +52,9 @@ public class NPCPaperHandler : MonoBehaviour
         move2Press.targetPositionRightHand.position = move2Press.rightHandIdle.position;
         while (Vector3.Distance(move2Press.targetPositionRightHand.position, move2Press.RigRightHand.position) > 0.01f)
             yield return null;
+
+        //callNPC
+        walkingNPC.Walking2PickUp(paper,NPCdestination);
 
         //restart typing; left hand move towards lever
         move2Press.targetPositionLeftHand.position = handle.position;

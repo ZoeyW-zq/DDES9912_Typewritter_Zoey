@@ -11,10 +11,14 @@ public class KeyPressMoving : MonoBehaviour
     bool isPressing = false;
     bool isReturning = false;
 
+    private AudioSource typingAudio;
+
     void Start()
     {
         startPosition = transform.localPosition;
         targetPosition = startPosition;
+
+        typingAudio = transform.GetComponentInParent<AudioSource>();
     }
 
     void Update()
@@ -56,6 +60,9 @@ public class KeyPressMoving : MonoBehaviour
         {
             targetPosition = startPosition + Vector3.down * pressDistance;
             isPressing = true;
+
+            
+            typingAudio.Play();
         }
     }
 }

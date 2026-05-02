@@ -39,7 +39,7 @@ public class MoveToPress : MonoBehaviour
         {
             var keyInfo = keyMap.key2Press[keyMap.text2Print[i]];
             Vector3 keyPosition = keyInfo.Item1.position;
-            Vector3 pressPosition = keyPosition + Vector3.up * 0.1f;
+            Vector3 pressPosition = keyPosition + Vector3.up * 0.05f;
             if(keyInfo.Item2 == KeyboardMap.Hand.Left)
             {
                 targetPositionLeftHand.position = pressPosition;
@@ -67,7 +67,7 @@ public class MoveToPress : MonoBehaviour
 
     void Press(Transform hand)
     {
-        hand.position += Vector3.down * 0.07f;
+        hand.position += Vector3.down * 0.1f;
     }
 
     void Lift(Transform hand)

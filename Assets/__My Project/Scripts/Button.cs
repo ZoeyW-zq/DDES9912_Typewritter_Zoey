@@ -23,7 +23,7 @@ public class Button : MonoBehaviour
     {
         if ((paperMovingSystem.Find(paperName))|| (paperMovingSystem.Find(paperNameClone)))
         {
-            Debug.LogError("There is already paper.");
+            Debug.Log("There is already paper.");
         }
         else
         {
