@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PaperSnapper : MonoBehaviour
@@ -15,9 +16,16 @@ public class PaperSnapper : MonoBehaviour
     {
         if (snapper.subject == null) return;
 
-        Holdable paper = snapper.subject;
-        
-        walkingNPC.Walking2PickUp(paper.transform,NPCdestination);
+        Holdable subject = snapper.subject;
+        Transform paper = subject.transform;
+        paper.SetParent(null);
+        paper.GetComponent<Rigidbody>().useGravity = false;
+        paper.GetComponent<Rigidbody>().isKinematic = true;
+        paper.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        paper.GetComponent<Holdable>().enabled = false;
+
+
+        walkingNPC.Walking2PickUp(paper,NPCdestination);
         snapper.SoftReleaseSubject();
     }
 }

@@ -40,10 +40,11 @@ public class NPCPaperHandler : MonoBehaviour
         while (Vector3.Distance(move2Press.targetPositionRightHand.position, move2Press.RigRightHand.position) > 0.01f)
             yield return null;
 
-        //deposit paper on desk — player picks it up from here
+        //deposit paper — move to Ignore Raycast so player cannot pick it up
         paper.SetParent(null);
         paper.GetComponent<Rigidbody>().isKinematic = false;
         paper.GetComponent<Rigidbody>().useGravity = true;
+        paper.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
 
         //right hand press button
         move2Press.targetPositionRightHand.position = button.position;

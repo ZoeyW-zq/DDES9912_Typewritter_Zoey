@@ -39,12 +39,17 @@ public class WalkingNPCController : MonoBehaviour
     // Called by both NPCPaperHandler and PaperDropZone
     public void Walking2PickUp(Transform paper2PickUp, Transform destination)
     {
+        Debug.Log(transform.name + "is called");
         if (state == State.Idle)
             StartPickUp(paper2PickUp,destination);
         else
         {
-            paperQueue.Enqueue(paper2PickUp);
-            destinationQueue.Enqueue(destination);
+            if (!paperQueue.Contains(paper2PickUp))
+            {
+                paperQueue.Enqueue(paper2PickUp);
+                destinationQueue.Enqueue(destination);
+            }
+                
         }
             
     }
@@ -67,6 +72,7 @@ public class WalkingNPCController : MonoBehaviour
 
     void OnArrive()
     {
+        rig.weight = 1;
         transform.GetComponent<NMAWalkTowards>().onArrive.RemoveListener(OnArrive);
         Debug.Log("on arrived");
         if (state == State.Walking2PickUp)
@@ -78,7 +84,7 @@ public class WalkingNPCController : MonoBehaviour
 
     IEnumerator PickUp()
     {
-        rig.weight = 1;
+        //rig.weight = 1;
         targetPosition.position = paper.position +Vector3.up*0.1f;
         while (Vector2.Distance(leftHandRig.position, targetPosition.position) > 0.01f)
             yield return null;
@@ -93,7 +99,7 @@ public class WalkingNPCController : MonoBehaviour
 
     IEnumerator DropOff()
     {
-        rig.weight = 1;
+        //rig.weight = 1;
         targetPosition.position = dropOffPosition.position;
         while (Vector2.Distance(leftHandRig.position, targetPosition.position) > 0.01f)
             yield return null;
