@@ -5,19 +5,17 @@ using UnityEngine.Animations.Rigging;
 
 public class WalkingNPCController : MonoBehaviour
 {
-    public Transform targetPosition;
-    public Transform leftHandRig;
-    public Transform walking2DropOff;
-    public Transform dropOffPosition;
+    [SerializeField] Transform targetPosition;
+    [SerializeField] Transform leftHandRig;
+    [SerializeField][Tooltip("where to drop off paper")] Transform dropOffDestination;
+    [SerializeField][Tooltip("position for hand to release")] Transform releasePaperPosition;
+    [SerializeField][Tooltip("transform that paper will attach to")] Transform holdingTip;
+    [SerializeField][Tooltip("speed of hand movement")] float speed = 1.5f;
+    Rig rig;
+    Transform paper;
 
-    public Rig rig;
-    public Transform holdingTip;
-    private float speed = 1.5f;
-    private Vector3 leftHandOriginalPosition;
-    public enum State { Idle, Walking2PickUp, Walking2DropOff }
-
+    enum State { Idle, Walking2PickUp, Walking2DropOff }
     State state = State.Idle;
-    [SerializeField]Transform paper;
 
     // Papers waiting to be picked up from either the NPC typist or the player
     Queue<Transform> paperQueue = new Queue<Transform>();
@@ -25,9 +23,8 @@ public class WalkingNPCController : MonoBehaviour
 
     private void Start()
     {
-        leftHandOriginalPosition = leftHandRig.localPosition;
         rig = leftHandRig.GetComponent<Rig>();
-        rig.weight = 0.2f;
+        rig.weight = 0f;
 
     }
 
@@ -36,45 +33,40 @@ public class WalkingNPCController : MonoBehaviour
         leftHandRig.position = Vector3.MoveTowards(leftHandRig.position, targetPosition.position, speed * Time.deltaTime);
     }
 
-    // Called by both NPCPaperHandler and PaperDropZone
-    public void Walking2PickUp(Transform paper2PickUp, Transform destination)
+    // Called by both NPCPaperHandler and PaperSnapper
+    public void StartPickUp(Transform paper2PickUp, Transform destination)
     {
-        Debug.Log(transform.name + "is called");
         if (state == State.Idle)
-            StartPickUp(paper2PickUp,destination);
+        {
+            Walk2PickUp(paper2PickUp, destination); 
+        }
         else
         {
             if (!paperQueue.Contains(paper2PickUp))
             {
                 paperQueue.Enqueue(paper2PickUp);
-                destinationQueue.Enqueue(destination);
+                destinationQueue.Enqueue(destination); 
             }
-                
         }
-            
     }
 
-    void StartPickUp(Transform paper2PickUp, Transform destination)
+    void Walk2PickUp(Transform paper2PickUp, Transform destination)
     {
         paper = paper2PickUp;
         
         transform.GetComponent<NMAWalkTowards>().SetDestination(destination);
-        transform.GetComponent<NMAWalkTowards>().onArrive.AddListener(OnArrive);
         state = State.Walking2PickUp;
     }
 
-    void Walking2DropOff()
+    void Walk2DropOff()
     {
         state = State.Walking2DropOff;
-        transform.GetComponent<NMAWalkTowards>().SetDestination(walking2DropOff);
-        transform.GetComponent<NMAWalkTowards>().onArrive.AddListener(OnArrive);
+        transform.GetComponent<NMAWalkTowards>().SetDestination(dropOffDestination);
     }
 
-    void OnArrive()
+    //Invoke when onArrive triggered
+    public void CheckState()
     {
-        rig.weight = 1;
-        transform.GetComponent<NMAWalkTowards>().onArrive.RemoveListener(OnArrive);
-        Debug.Log("on arrived");
         if (state == State.Walking2PickUp)
             StartCoroutine(PickUp());
 
@@ -84,7 +76,7 @@ public class WalkingNPCController : MonoBehaviour
 
     IEnumerator PickUp()
     {
-        //rig.weight = 1;
+        rig.weight = 1;
         targetPosition.position = paper.position +Vector3.up*0.1f;
         while (Vector2.Distance(leftHandRig.position, targetPosition.position) > 0.01f)
             yield return null;
@@ -94,13 +86,13 @@ public class WalkingNPCController : MonoBehaviour
         paper.GetComponent<Rigidbody>().isKinematic = true;
 
         rig.weight = 0;
-        Walking2DropOff();
+        Walk2DropOff();
     }
 
     IEnumerator DropOff()
     {
-        //rig.weight = 1;
-        targetPosition.position = dropOffPosition.position;
+        rig.weight = 1;
+        targetPosition.position = releasePaperPosition.position;
         while (Vector2.Distance(leftHandRig.position, targetPosition.position) > 0.01f)
             yield return null;
 
@@ -108,13 +100,12 @@ public class WalkingNPCController : MonoBehaviour
         paper.GetComponent<Rigidbody>().useGravity = true;
         paper.GetComponent<Rigidbody>().isKinematic = false;
         paper = null;
-        //targetPosition.localPosition = leftHandOriginalPosition;
         rig.weight = 0;
 
-        // Return to Idle, then immediately process the next queued paper if any
+        // Return to Idle, then immediately process the next queued paper
         state = State.Idle;
         if (paperQueue.Count > 0)
-            StartPickUp(paperQueue.Dequeue(),destinationQueue.Dequeue());
+            Walk2PickUp(paperQueue.Dequeue(),destinationQueue.Dequeue());
 
        
     }

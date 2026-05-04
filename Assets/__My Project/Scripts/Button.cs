@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-    public GameObject paperPrefab;
+    [SerializeField] GameObject paperPrefab;
     [SerializeField]
     Transform paperMovingSystem;
     string paperNameClone = "PaperContainer(Clone)";

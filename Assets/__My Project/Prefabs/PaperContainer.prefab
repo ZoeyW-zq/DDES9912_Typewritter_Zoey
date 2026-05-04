@@ -305,7 +305,7 @@ MonoBehaviour:
   customTouchDistance: -1
   heldText: 
   restrictSecondaryToHeldOnly: 0
-  customHoldDistance: 0
+  customHoldDistance: 0.7
   eventRelay: {fileID: 0}
   onPrimaryInteractBackground:
     m_PersistentCalls:

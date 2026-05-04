@@ -2,26 +2,16 @@ using UnityEngine;
 
 public class FingerInteractable : MonoBehaviour
 {
-    [SerializeField]
-    InteractableGeneral subject;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    InteractableGeneral subject; //usually are keys,levers and reset buttons
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "InteractionBox")
+        if (other.name == "InteractionBox") //Preventing triggering by paperContainer (the Holdable script is inherited from InteractableGeneral)
         {
-            subject = other.GetComponent<InteractableGeneral>();
-            subject.onPrimaryInteract.Invoke();
+            subject = other.GetComponent<InteractableGeneral>(); 
+            if (subject != null) 
+                subject.onPrimaryInteract.Invoke();
         }
        
     }

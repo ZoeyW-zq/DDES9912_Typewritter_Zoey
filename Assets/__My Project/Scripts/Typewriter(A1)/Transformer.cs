@@ -10,11 +10,7 @@ public class Transformer : MonoBehaviour
     float speed;
     public float yScaleLimit = 5.0f;
     bool movable = true;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-     
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -40,17 +36,19 @@ public class Transformer : MonoBehaviour
         targetTransform.position += Vector3.up * distance;
     }
 
+    private Coroutine moveRoutine;
     public void MoveLeft(float distance)
     {
-        if (movable)
+        if (movable&&moveRoutine==null)
         {
-            StartCoroutine(StrikeDelay(distance));
+            moveRoutine = StartCoroutine(StrikeDelay(distance));
         }
     }
     IEnumerator StrikeDelay(float distance)
     {
         yield return new WaitForSeconds(0.3f);
         targetTransform.position += Vector3.left * distance;
+        moveRoutine = null;
     }
     public void MoveTo(Transform position)
     {

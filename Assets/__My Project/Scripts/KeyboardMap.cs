@@ -1,29 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
 
 public class KeyboardMap : MonoBehaviour
 {
+    [SerializeField] Transform[] keysTransform;
+    [SerializeField] MoveToPress MoveToPress;
+    [SerializeField][Tooltip("Used to distinguish between the left and right hand areas")]
+    Transform centerPosition;
+
+    //which hand to type
     public enum Hand
     {
         Left,
         Right
     }
-    public Dictionary<char, (Transform,Hand)> keyLocationMap;
+    Dictionary<char, (Transform, Hand)> keyLocationMap;
 
-    [SerializeField]
-    Transform[] keysTransform;
-
-    public string text2Print;
+    [Tooltip("The words you want the NPC to type")]
+    public string text2Type;
     public Dictionary<char, (Transform, Hand)> key2Press;
 
-    public MoveToPress MoveToPress;
-    public Transform centerPosition;
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         //AddChildTransform();
@@ -34,6 +31,8 @@ public class KeyboardMap : MonoBehaviour
         'A','S','D','F','G','H','J','K','L', ';', ':',
         'Z','X','C','V','B','N','M', ',', '.', '/',' ',
         };
+
+        //Store the transform and hand corresponding to the character
         keyLocationMap = new Dictionary<char, (Transform, Hand)>();
         for (int i = 0;i<keys.Length; i++)
         {
@@ -46,14 +45,12 @@ public class KeyboardMap : MonoBehaviour
                 keyLocationMap.Add(keys[i], (keysTransform[i], Hand.Right));
             }
         }
-        
 
+        //Store the transform and hand corresponding to specific characters
         key2Press = new Dictionary<char, (Transform, Hand)>();
-        for (int i = 0; i<text2Print.Length; i++)
+        for (int i = 0; i<text2Type.Length; i++)
         {
-            //key2Press.Add(text2Print[i],keyLocationMap[text2Print[i]]);
-            key2Press[text2Print[i]] = (keyLocationMap[text2Print[i]].Item1, keyLocationMap[text2Print[i]].Item2);
-            //Debug.Log(key2Press[i]);
+            key2Press[text2Type[i]] = (keyLocationMap[text2Type[i]].Item1, keyLocationMap[text2Type[i]].Item2);
         }
         if (MoveToPress)
         {
@@ -62,6 +59,7 @@ public class KeyboardMap : MonoBehaviour
         
     }
 
+    //get transform of each key
     void AddChildTransform()
     {
         keysTransform = new Transform[transform.childCount];
@@ -71,9 +69,4 @@ public class KeyboardMap : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -1,14 +1,11 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class LightToggle : MonoBehaviour
 {
     [SerializeField]
-    Material bulbMaterial;
-    
-    [SerializeField]
     Transform bulb;
+    Material bulbMaterial;
     Transform lightSource;
     bool lightOn;
     Color emissionColor;
@@ -23,8 +20,6 @@ public class LightToggle : MonoBehaviour
     public void ToggleLight()
     {
         
-
-
         if (lightOn == true)
         {
             StartCoroutine(FadeLight(5.5f,0f,1f,0f));
@@ -33,7 +28,6 @@ public class LightToggle : MonoBehaviour
         }
         else {
             StartCoroutine(FadeLight(0f,5.5f,0f,1f));
-            //bulbMaterial.SetColor("_EmissionColor", emissionColor * 10f);
             lightOn = true;
         }
         

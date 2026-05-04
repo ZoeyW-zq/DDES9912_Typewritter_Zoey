@@ -1,27 +1,19 @@
 using System.Collections;
-using TMPro;
 using UnityEngine;
-using UnityEngine.Animations.Rigging;
-using UnityEngine.XR;
 
 public class MoveToPress : MonoBehaviour
 {
-    public KeyboardMap keyMap;
+    [SerializeField] KeyboardMap keyMap;
     public Transform targetPositionRightHand;
     public Transform targetPositionLeftHand;
     public Transform RigRightHand;
     public Transform RigLeftHand;
     public Transform rightHandIdle;
     public Transform leftHandIdle;
-    [SerializeField] float speed = 0.5f;
-    [SerializeField] NPCPaperHandler NPCPaperHandler;
+    [SerializeField][Tooltip("speed of hand movement")] float speed = 0.5f;
+    [SerializeField] TypistNPCHandler NPCPaperHandler;
     
    
-
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -35,9 +27,9 @@ public class MoveToPress : MonoBehaviour
         targetPositionRightHand.position = rightHandIdle.position;
         targetPositionLeftHand.position = leftHandIdle.position;
         yield return new WaitForSeconds(1);
-        for (int i = 0; i < keyMap.text2Print.Length; i++)
+        for (int i = 0; i < keyMap.text2Type.Length; i++)
         {
-            var keyInfo = keyMap.key2Press[keyMap.text2Print[i]];
+            var keyInfo = keyMap.key2Press[keyMap.text2Type[i]];
             Vector3 keyPosition = keyInfo.Item1.position;
             Vector3 pressPosition = keyPosition + Vector3.up * 0.05f;
             if(keyInfo.Item2 == KeyboardMap.Hand.Left)

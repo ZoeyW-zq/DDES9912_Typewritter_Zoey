@@ -4,13 +4,10 @@ using UnityEngine.UI;
 
 public class PaperCounter : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI text;
     string textString;
-    [SerializeField]
-    TextMeshProUGUI text;
-    [SerializeField]
     int count;
-
-    InteractableTrigger interactableTrigger;
+    InteractableTrigger interactableTrigger; //Area trigger prefab from EZPZ Toolkit
 
 
     private void Start()
@@ -26,7 +23,7 @@ public class PaperCounter : MonoBehaviour
 
     public void UpdateCount()
     {
-        count = interactableTrigger.contactList.Count;
+        count = interactableTrigger.contactList.Count; 
         text.text = textString+count.ToString();
     }
 }
