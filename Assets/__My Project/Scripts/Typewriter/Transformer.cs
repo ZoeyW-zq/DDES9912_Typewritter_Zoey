@@ -10,8 +10,12 @@ public class Transformer : MonoBehaviour
     float speed;
     public float yScaleLimit = 5.0f;
     bool movable = true;
-    
+    AudioSource carriageAudio;
 
+    private void Start()
+    {
+        carriageAudio = GetComponent<AudioSource>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -46,6 +50,7 @@ public class Transformer : MonoBehaviour
     }
     IEnumerator StrikeDelay(float distance)
     {
+        carriageAudio.Play();
         yield return new WaitForSeconds(0.3f);
         targetTransform.position += Vector3.left * distance;
         moveRoutine = null;

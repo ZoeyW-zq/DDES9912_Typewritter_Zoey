@@ -27,6 +27,7 @@ public class Button : MonoBehaviour
         }
         else
         {
+            paperMovingSystem.GetComponent<PaperMovingSystem>().targetPosition.localPosition = Vector3.zero;
             GameObject paperContainer = Instantiate(paperPrefab, paperMovingSystem.position, paperMovingSystem.rotation, paperMovingSystem);
             paperMovingSystem.GetComponent<PaperMovingSystem>().GetPaper();
         }

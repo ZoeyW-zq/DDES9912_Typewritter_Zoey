@@ -1361,7 +1361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &67264210
 Transform:
   m_ObjectHideFlags: 0
@@ -2933,7 +2933,7 @@ Transform:
   m_GameObject: {fileID: 170875533}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.57, y: 0.713, z: 0.301}
+  m_LocalPosition: {x: -0.41712388, y: 0.74844986, z: 0.5212259}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9264,7 +9264,7 @@ Transform:
   m_GameObject: {fileID: 611015744}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.07, y: 0.02722, z: 0.42}
+  m_LocalPosition: {x: -1.36, y: 0.02722, z: 0.751}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9605,7 +9605,7 @@ Transform:
   m_GameObject: {fileID: 654369201}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.56999993, y: 0.713, z: 0.301}
+  m_LocalPosition: {x: -0.41712388, y: 0.74844986, z: 0.5212259}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9809,7 +9809,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 05bbbcd36de287f41b7fbad700b97acd, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
@@ -13671,7 +13671,7 @@ Transform:
   m_GameObject: {fileID: 970598256}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.13, y: 0.02722, z: -1.662}
+  m_LocalPosition: {x: 1.037, y: 0.02722, z: -1.662}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24778,10 +24778,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.66076434
-  m_Height: 3.9064968
+  m_Radius: 0.8422559
+  m_Height: 4.9794903
   m_Direction: 1
-  m_Center: {x: -0.0041127936, y: 0.37125146, z: 0.011670076}
+  m_Center: {x: -0.024336683, y: 0.37125146, z: 0.011670077}
 --- !u!23 &1378507763
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24928,7 +24928,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: ddcbcde33c4906c41b2d2d06c89bb2da, type: 3}
+  m_Resource: {fileID: 8300000, guid: cc4f0ecf8ff933e428e372f568404f00, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -25039,7 +25039,7 @@ Transform:
   m_GameObject: {fileID: 1383169373}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.57, y: 0.713, z: 0.301}
+  m_LocalPosition: {x: -0.41712388, y: 0.74844986, z: 0.5212259}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28526,6 +28526,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 722207573187966719, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 726327258845010759, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -29678,6 +29682,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4569747926391900684, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4574248384243867674, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -30670,6 +30678,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7427362012037234730, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7434267488359864873, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -30825,14 +30837,6 @@ PrefabInstance:
     - target: {fileID: 8129793246958384070, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: m_Layer
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8136734564481978301, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
-      propertyPath: text2Type
-      value: THIS IS YOUR SPORTY GRANNY
-      objectReference: {fileID: 0}
-    - target: {fileID: 8136734564481978301, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
-      propertyPath: text2Print
-      value: YOYO R U READY
       objectReference: {fileID: 0}
     - target: {fileID: 8136734564481978301, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: MoveToPress
@@ -32605,6 +32609,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 722207573187966719, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 726327258845010759, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -33757,6 +33765,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4569747926391900684, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4574248384243867674, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -34749,6 +34761,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7427362012037234730, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7434267488359864873, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -34904,14 +34920,6 @@ PrefabInstance:
     - target: {fileID: 8129793246958384070, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: m_Layer
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8136734564481978301, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
-      propertyPath: text2Type
-      value: I AM THE FATEST TYPIST IN THE WORLD
-      objectReference: {fileID: 0}
-    - target: {fileID: 8136734564481978301, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
-      propertyPath: text2Print
-      value: I AM YOUR SPORTY GRANNY
       objectReference: {fileID: 0}
     - target: {fileID: 8136734564481978301, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: MoveToPress
@@ -43463,7 +43471,7 @@ Transform:
   m_GameObject: {fileID: 1953500968}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.005, y: 0.02722, z: -2.51741}
+  m_LocalPosition: {x: -1.289, y: 0.02722, z: -2.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44033,7 +44041,7 @@ Transform:
   m_GameObject: {fileID: 1988049318}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.57, y: 0.713, z: 0.301}
+  m_LocalPosition: {x: -0.41712388, y: 0.74844986, z: 0.5212259}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45371,7 +45379,7 @@ Transform:
   m_GameObject: {fileID: 2099638114}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.63, y: 0.02722, z: 1.8125896}
+  m_LocalPosition: {x: 2.369, y: 0.02722, z: 1.992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45702,10 +45710,6 @@ PrefabInstance:
     - target: {fileID: 796793261663956290, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: m_Name
       value: TypeWritter
-      objectReference: {fileID: 0}
-    - target: {fileID: 5201685581138009885, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
-      propertyPath: customHoldDistance
-      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8807635462460958172, guid: 2d6ddb9a6a3e2e349aa8725daf478f84, type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,12 +5,17 @@ public class PaperMovingSystem : MonoBehaviour
     public Transform paperScaler;
     [SerializeField]float distance = 0.01f;
     [SerializeField]float scaleAmount = 0.075f;
+    public Transform targetPosition;
     Transform paper;
+    
 
     void Start()
     {
         GetPaper();
         UpdateCollider();
+        if(targetPosition==null)
+            targetPosition = transform.Find("targetPosition");
+
     }
 
     public void KnobTwist()
