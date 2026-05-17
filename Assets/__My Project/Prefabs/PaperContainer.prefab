@@ -112,37 +112,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &391302250433136068
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6467721678948473197}
-  m_Layer: 0
-  m_Name: attachPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6467721678948473197
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391302250433136068}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3814368855658641927}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &787522509801423318
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,8 +125,8 @@ GameObject:
   - component: {fileID: 908434105540932375}
   - component: {fileID: 5161082834320790145}
   - component: {fileID: 1405722736317853005}
-  - component: {fileID: 5154123240107218732}
   - component: {fileID: -5851353883138852290}
+  - component: {fileID: -9145050470233066993}
   m_Layer: 0
   m_Name: PaperContainer
   m_TagString: Untagged
@@ -180,7 +149,7 @@ Transform:
   m_Children:
   - {fileID: 2814019262837325862}
   - {fileID: 3839503989666453942}
-  - {fileID: 6467721678948473197}
+  - {fileID: 3928530909027777099}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3417463864602143053
@@ -210,7 +179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881ae94141784eb479d1a08758f34eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PaperTakeAway
-  paperScaler: {fileID: 0}
 --- !u!54 &5161082834320790145
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -259,7 +227,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.7884011, y: 0.9191237, z: 0.16567168}
   m_Center: {x: -0.045797605, y: 0.60350704, z: 0.017670074}
---- !u!114 &5154123240107218732
+--- !u!114 &-5851353883138852290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787522509801423318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a870b3a921a07df43a56b3f767e680fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerFilter
+  filterString: paper
+--- !u!114 &-9145050470233066993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,7 +256,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 908434105540932375}
-        m_TargetAssemblyTypeName: PaperHoldable, Assembly-CSharp
+        m_TargetAssemblyTypeName: PaperTakeAway, Assembly-CSharp
         m_MethodName: TakeAway
         m_Mode: 1
         m_Arguments:
@@ -305,7 +286,7 @@ MonoBehaviour:
   customTouchDistance: -1
   heldText: 
   restrictSecondaryToHeldOnly: 0
-  customHoldDistance: 0.7
+  customHoldDistance: -1
   eventRelay: {fileID: 0}
   onPrimaryInteractBackground:
     m_PersistentCalls:
@@ -341,22 +322,40 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   myMagnetSnapper: {fileID: 0}
   myRayManipulator: {fileID: 0}
-  originalUseGravity: 0
+  originalUseGravity: 1
   moving: 0
   subCollliders: []
---- !u!114 &-5851353883138852290
-MonoBehaviour:
+--- !u!1 &6318079270264383251
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787522509801423318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a870b3a921a07df43a56b3f767e680fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerFilter
-  filterString: paper
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3928530909027777099}
+  m_Layer: 0
+  m_Name: HoldPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3928530909027777099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6318079270264383251}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.37, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3814368855658641927}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8477667313750585981
 GameObject:
   m_ObjectHideFlags: 0

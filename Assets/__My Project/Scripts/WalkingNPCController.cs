@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class WalkingNPCController : MonoBehaviour
 {
@@ -76,6 +77,10 @@ public class WalkingNPCController : MonoBehaviour
 
     IEnumerator PickUp()
     {
+        //VR mode
+        if (paper.GetComponent<XRGrabInteractable>())
+            paper.GetComponent<XRGrabInteractable>().enabled = false;
+
         rig.weight = 1;
         targetPosition.position = paper.position +Vector3.up*0.1f;
         while (Vector2.Distance(leftHandRig.position, targetPosition.position) > 0.01f)
@@ -84,6 +89,8 @@ public class WalkingNPCController : MonoBehaviour
         paper.SetParent(holdingTip);
         paper.GetComponent<Rigidbody>().useGravity = false;
         paper.GetComponent<Rigidbody>().isKinematic = true;
+
+        
 
         rig.weight = 0;
         Walk2DropOff();
